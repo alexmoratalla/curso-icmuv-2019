@@ -1,0 +1,31 @@
+&control
+              prefix = 'pw'
+           verbosity = 'high'
+          wf_collect = .true.
+          pseudo_dir = '.'
+/&end
+&system
+           celldm(1) = 4.7
+           celldm(3) = 2.55319148936
+             ecutwfc = 40
+               ibrav = 4
+                 nat = 2
+                ntyp = 1
+/&end
+&electrons
+            conv_thr = 1e-08
+/&end
+&ions
+        ion_dynamics = 'bfgs'
+/&end
+&cell
+         cell_dofree = '2Dxy'
+       cell_dynamics = 'bfgs'
+/&end
+ATOMIC_SPECIES
+   C   10.811     C_r.upf
+ATOMIC_POSITIONS { crystal }
+  C   0.0000000000   0.0000000000   0.5000000000
+  C   0.3333333333   0.6666666667   0.5000000000
+K_POINTS { automatic }
+  3  3  1  0  0  0
