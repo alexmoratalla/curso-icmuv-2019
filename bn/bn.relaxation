@@ -1,12 +1,12 @@
 &control
-         calculation = 'scf'
+         calculation = 'vc-relax'
               prefix = 'pw'
            verbosity = 'high'
           wf_collect = .true.
           pseudo_dir = '.'
 /&end
 &system
-           celldm(1) = 4.7240779804
+           celldm(1) = 5.3 
            celldm(3) = 2.55319148936
              ecutwfc = 40
                ibrav = 4
