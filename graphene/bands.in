@@ -1,0 +1,3 @@
+&BANDS
+prefix='pw',filband='c-bands',lsym=.true.
+/
